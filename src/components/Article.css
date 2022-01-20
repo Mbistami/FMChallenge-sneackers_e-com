@@ -1,0 +1,151 @@
+.button-add-cart {
+    box-shadow: 0px 25px 50px -17px rgba(0,0,0,0.46);
+    background-color: hsl(26, 100%, 55%);
+    width: 70%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.button-add-cart:hover {
+    opacity: .8;
+}
+
+.images-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.images-box > div {
+    justify-content: center;
+    align-items: center;
+}
+
+.image-boxes {
+    height: 100px;
+    display: flex;
+    column-gap: 17px;
+}
+
+.image-boxes > span:hover {
+    cursor: pointer;
+}
+
+.image-boxes-dialog{
+    height: 100px;
+    display: flex;
+    column-gap: 17px;
+    background-color: transparent;
+    width: 100%;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.image-boxes-dialog > span:hover {
+    cursor: pointer;
+}
+
+.dialog-controller {
+    position: relative;
+}
+
+.navigation-right {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    right: -25px;
+    overflow: visible;
+    background-image: url('./icon-previous.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    top: 50%;
+}
+
+.navigation:hover {
+    cursor: pointer;
+}
+
+.navigation-left {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('./icon-previous.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -25px;
+    overflow: visible;
+    top: 50%;
+}
+
+.navigation-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: -60px;
+    background-image: url('./icon-close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.MuiPaper-root{
+    overflow-y: inherit;
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    height: 78px;
+    width: 78px;
+    background-color: white;
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .6;
+    border-radius: 15px;
+    border: 2px solid hsl(26, 100%, 55%);
+}
+
+
+.bottom {
+    width: 100%
+}
+
+@media (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+}
+
+.button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.button-add-cart > div {
+    column-gap: 10px;
+}
+
+.cart-logo {
+    background-image: url('./icon-cart.svg');
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 50px;
+    color: white;
+    background-position: center;
+}
+.control *::selection {
+    background-color: transparent;
+}
