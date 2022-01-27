@@ -8,6 +8,30 @@
     border-radius: 10px;
 }
 
+.cart-menu{
+    position: relative;
+}
+
+.badge > p {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.badge {
+    width: 16px;
+    height: 16px;
+    background-color: #FF7D1A;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+    top: -2px;
+    right: -10px;
+    align-items: center;
+}
+
 .cart-menu:hover {
     cursor: pointer;
 }
@@ -29,4 +53,14 @@
 
 .delete:hover {
     transform: scale(1.2);
+}
+
+.navbar-items > p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar-menu {
+    cursor: pointer;
 }
