@@ -38,7 +38,7 @@ function Navbar() {
         <img alt="cart" src="/assets/icon-cart.svg" />
     </Stack>
     <Stack height={42} width={42}>
-    <Avatar src="/assets/image-avatar.png" className="avatar"/>
+    <Avatar alt="avatar" src="/assets/image-avatar.png" className="avatar"/>
     </Stack>
     </Stack>
     <Menu
